@@ -11,12 +11,19 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
 
+    <!--Additional CSS-->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
     <title>NuCamp: A Better Way to Camp</title>
   </head>
 
   <body>
     <!-- page header section -->
-    <header class="jumbotron">
+    <header class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -29,9 +36,9 @@
 
     <!-- row 1 -->
     <div class="container">
-      <div class="row">
+      <div class="row row-content align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
-          <h2>Discover & Review</h2>
+          <h2 class="text-sm-right">Discover & Review</h2>
         </div>
 
         <div class="col">
@@ -42,35 +49,35 @@
           </p>
         </div>
       </div>
-    </div>
 
-    <!-- row 2 -->
-    <div class="row">
-      <div class="col-sm-4 col-md-3">
-        <h2>Featured Campsites</h2>
+      <!-- row 2 -->
+      <div class="row row-content align-items-center">
+        <div class="col-sm-4 col-md-3">
+          <h2>Featured Campsites</h2>
+        </div>
+
+        <div class="col">
+          <h3>React Lake Campground</h3>
+          <p>
+            Nestles in the foothills of the Chrome Mountains, this campground on
+            the shores of the pristine React Lake is a favorite for fly fishers.
+          </p>
+        </div>
       </div>
 
-      <div class="col">
-        <h3>React Lake Campground</h3>
-        <p>
-          Nestles in the foothills of the Chrome Mountains, this campground on
-          the shores of the pristine React Lake is a favorite for fly fishers.
-        </p>
-      </div>
-    </div>
+      <!-- row 3 -->
+      <div class="row row-content align-items-center">
+        <div class="col-sm-4 order-sm-last col-md-3">
+          <h2 class="text-sm-right">Our Community Partners</h2>
+        </div>
 
-    <!-- row 3 -->
-    <div class="row">
-      <div class="col-sm-4 order-sm-last col-md-3">
-        <h2>Our Community Partners</h2>
-      </div>
-
-      <div class="col">
-        <h3>Bootstrap Outfitters</h3>
-        <p>
-          Bootstrap Outfitters supplies you with gear you need at prices you
-          can't beat.
-        </p>
+        <div class="col">
+          <h3>Bootstrap Outfitters</h3>
+          <p>
+            Bootstrap Outfitters supplies you with gear you need at prices you
+            can't beat.
+          </p>
+        </div>
       </div>
     </div>
 
@@ -79,15 +86,15 @@
         <div class="row">
           <div class="col-4 col-sm-2 offset-1">
             <h5>Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Sites</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
+            <ul class="list-unstyled">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Sites</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
           </div>
 
-          <div class="col-6 col-sm-5">
+          <div class="col-6 col-sm-5 text-center">
             <h5>Social</h5>
             <a href="http://instagram.com/">Instagram</a>
             <a href="http://facebook.com/">Facebook</a>
@@ -95,7 +102,7 @@
             <a href="http://youtube.com/">YouTube</a>
           </div>
 
-          <div class="col-6 col-sm-5">
+          <div class="col-sm-4 text-center">
             Tel: 1-206-555-1234 <br />
             Email: campsites@nucamp.co
           </div>

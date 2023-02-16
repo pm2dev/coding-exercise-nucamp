@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--CSS -->
+    <!--CSS -->
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -87,13 +87,13 @@
       </div>
     </nav>
 
-    <!-- row 1 -->
+    <!-- main content -->
     <div class="container">
+      <!-- row 1 Discover & review -->
       <div class="row row-content align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
           <h2 class="text-sm-right">Discover & Review</h2>
         </div>
-
         <div class="col">
           <div class="media">
             <img
@@ -112,22 +112,32 @@
         </div>
       </div>
 
-      <!-- row 2 -->
+      <!-- row 2 Featured Campsites -->
       <div class="row row-content align-items-center">
         <div class="col-sm-4 col-md-3">
           <h2>Featured Campsites</h2>
         </div>
 
         <div class="col">
-          <h3>React Lake Campground</h3>
-          <p class="d-none d-sm-block">
-            Nestles in the foothills of the Chrome Mountains, this campground on
-            the shores of the pristine React Lake is a favorite for fly fishers.
-          </p>
+          <div class="media">
+            <div class="media-body align-self-center">
+              <h3>React Lake Campground</h3>
+              <p class="d-none d-sm-block">
+                Nestles in the foothills of the Chrome Mountains, this
+                campground on the shores of the pristine React Lake is a
+                favorite for fly fishers.
+              </p>
+            </div>
+            <img
+              class="d-flex ml-3 img-thumbnail"
+              src="img/react-lake-thumb.jpg"
+              alt="React Lake"
+            />
+          </div>
         </div>
       </div>
 
-      <!-- row 3 -->
+      <!-- row 3 Our Community Partners -->
       <div class="row row-content align-items-center">
         <div class="col-sm-4 order-sm-last col-md-3">
           <h2 class="text-sm-right">Our Community Partners</h2>
@@ -150,8 +160,71 @@
           </div>
         </div>
       </div>
+
+      <!-- form start -->
+      <div class="row row-content">
+        <div class="col-sm-6 mx-auto">
+          <div class="card">
+            <!-- card title -->
+            <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
+            <div class="card-body">
+              <form action="" method="post">
+               
+                <!-- row 1 -->
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label for="numCampers">Number of Campers</label>
+                  </div>
+                  <div class="col-sm-6">
+                    <select
+                      class="form-control"
+                      name="numCampers"
+                      id="numCampers"
+                    >
+                      <option value="0">select...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+                      <option value="6">6</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- row 2 -->
+                <div class="row">
+                  <div class="form-group col-sm-6">
+                    <label for="date" class="col-form-label">Date</label>
+                  </div>
+                  <div class="col-sm-6 col-form-label">
+                    <input
+                      class="form-control"
+                      type="date"
+                      name="date"
+                      id="date"
+                      placeholder="mm/dd/yyyy"
+                    />
+                  </div>
+                </div>
+<!-- TODO: Fix the spacing between the submit button and date field on XS viewports-->
+                <!-- row 3 -->
+                <div class="row">
+                  <div class=" form-group col">
+                    <button class="btn btn-primary" type="submit">
+                      Search
+                    </button> 
+                  </div>
+                </div>
+              </form>
+              <!--form end-->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
+    <!-- page footer -->
     <footer class="site-footer">
       <div class="container">
         <div class="row">

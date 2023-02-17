@@ -36,21 +36,29 @@
     <header class="jumbotron jumbotron-fluid">
       <div class="container">
         <div class="row">
+          <!-- column 1 logo -->
+          <div class="col-4 col-sm-3 col-md-2 align-self-center">
+            <img src="img/logo.png" class="img-fluid" />
+          </div>
+          <!-- column 2 title -->
           <div class="col">
             <h1>NuCamp</h1>
             <h2>a better way to camp</h2>
           </div>
-          <div class="col-4 col-sm-3 col-md-2 align-self-center">
-            <img src="img/logo.png" class="img-fluid" />
+          <!-- column 3 button -->
+          <div class="col-md-4 col-xl-2 m-4">
+            <a class="btn btn-info" href="#reserveForm" role="button"
+              >Reserve Campsite</a
+            >
           </div>
         </div>
       </div>
     </header>
-
+    <!-- TODO: Fix the spacing in the nav bar. There should be a space between the icon and the label-->
     <!-- nav bar -->
     <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
       <div class="container">
-        <a class="navbar-brand" href="#"
+        <a class="navbar-brand" href="index.html"
           ><img src="img/logo.png" height="30" width="30"
         /></a>
         <button
@@ -168,11 +176,10 @@
             <!-- card title -->
             <h3 class="card-header bg-info text-white">Reserve a Campsite</h3>
             <div class="card-body">
-              <form action="" method="post">
-               
+              <form id="reserveForm" action="" method="post">
                 <!-- row 1 -->
-                <div class="row">
-                  <div class="form-group col-sm-6">
+                <div class="form-group row">
+                  <div class="col-sm-6">
                     <label for="numCampers">Number of Campers</label>
                   </div>
                   <div class="col-sm-6">
@@ -194,7 +201,7 @@
 
                 <!-- row 2 -->
                 <div class="row">
-                  <div class="form-group col-sm-6">
+                  <div class="col-sm-6">
                     <label for="date" class="col-form-label">Date</label>
                   </div>
                   <div class="col-sm-6 col-form-label">
@@ -207,13 +214,13 @@
                     />
                   </div>
                 </div>
-<!-- TODO: Fix the spacing between the submit button and date field on XS viewports-->
+
                 <!-- row 3 -->
-                <div class="row">
-                  <div class=" form-group col">
+                <div class="form-group row">
+                  <div class="col">
                     <button class="btn btn-primary" type="submit">
                       Search
-                    </button> 
+                    </button>
                   </div>
                 </div>
               </form>
